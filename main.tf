@@ -20,7 +20,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = var.resource_group_name
+  name     = "myTFResourceGroup"
   location = "westus2"
   tags = {
     Environment = "Terraform Getting Started"
